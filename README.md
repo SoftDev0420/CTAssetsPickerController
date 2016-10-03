@@ -55,7 +55,8 @@ iOS 9 SDK, Minimum Deployment Target iOS 8.0
 
     ```` objective-c
     @interface ViewController : UIViewController <CTAssetsPickerControllerDelegate>
-
+    ````
+    
 3. Create and present CTAssetsPickerController
 
     ```` objective-c
