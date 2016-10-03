@@ -50,8 +50,13 @@ iOS 9 SDK, Minimum Deployment Target iOS 8.0
     ```` objective-c
     #import <CTAssetsPickerController/CTAssetsPickerController.h>
     ````
+    
+2. Declare ViewController as a CTAssetsPickerControllerDelegate
 
-2. Create and present CTAssetsPickerController
+    ```` objective-c
+    @interface ViewController : UIViewController <CTAssetsPickerControllerDelegate>
+
+3. Create and present CTAssetsPickerController
 
     ```` objective-c
     // request authorization status
@@ -74,7 +79,7 @@ iOS 9 SDK, Minimum Deployment Target iOS 8.0
     }];
     ````
 
-3. Implement didFinishPickingAssets delegate
+4. Implement didFinishPickingAssets delegate
 
     If the picker is presented by `presentViewController:animated:completion:` method, the delegate is responsible for dismissing the picker when the operation completes.
 
